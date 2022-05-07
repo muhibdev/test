@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { SWRConfig } from 'swr';
 import axios from 'axios';
 
@@ -5,7 +6,7 @@ const Axios = axios.create({
   baseURL: process.env['APP_URL'] + '/api',
 });
 
-const Layout = () => {
+const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <SWRConfig
       value={{
@@ -14,7 +15,9 @@ const Layout = () => {
           return data;
         },
       }}
-    ></SWRConfig>
+    >
+      {children}
+    </SWRConfig>
   );
 };
 

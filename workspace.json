@@ -4,6 +4,7 @@
     "api": "apps/api",
     "app": "apps/app",
     "app-e2e": "apps/app-e2e",
-    "shared-components": "libs/shared-components"
+    "shared-components": "libs/shared-components",
+    "shared-types": "libs/shared-types"
   }
 }

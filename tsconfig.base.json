@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dr/shared-components": ["libs/shared-components/src/index.ts"]
+      "@dr/shared-components": ["libs/shared-components/src/index.ts"],
+      "@dr/shared-types": ["libs/shared-types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
